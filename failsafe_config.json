@@ -1,0 +1,30 @@
+{
+  "battery": {
+    "warning_percent": 50,
+    "critical_percent": 30,
+    "emergency_percent": 20,
+    "voltage_critical": 11.1
+  },
+  "gps": {
+    "warning_satellites": 7,
+    "critical_satellites": 5,
+    "emergency_satellites": 3
+  },
+  "speed": {
+    "warning_horizontal": 15,
+    "critical_horizontal": 25,
+    "emergency_horizontal": 35,
+    "warning_vertical": 5,
+    "critical_vertical": 10
+  },
+  "attitude": {
+    "warning_angle": 30,
+    "critical_angle": 45,
+    "emergency_angle": 60
+  },
+  "actions": {
+    "auto_rtl_enabled": false,
+    "auto_land_enabled": false,
+    "emergency_stop_enabled": false
+  }
+}

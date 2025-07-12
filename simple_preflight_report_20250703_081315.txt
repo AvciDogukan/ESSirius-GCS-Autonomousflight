@@ -1,0 +1,95 @@
+============================================================
+🚁 BASİT MAVSDK PREFLIGHT CHECK RAPORU
+============================================================
+Rapor Tarihi: 2025-07-03 08:13:18
+Bağlantı: udp://:14540
+MAVSDK: ✅ Mevcut
+Kontrol Tipi: Basit Telemetri Kontrolleri (UUID yok)
+
+📊 ÖZET
+------------------------------
+Toplam: 8
+✅ Başarılı: 3
+❌ Başarısız: 2
+⚠️ Uyarı: 3
+
+🛡️ GÜVENLİK
+------------------------------
+Durum: 🚨 UÇUŞ GÜVENLİ DEĞİL
+Öneri: 2 kritik hata! Uçuş yapmayın!
+
+📝 DETAYLAR
+------------------------------
+
+MAVSDK Bağlantısı [KRİTİK]:
+  Durum: ✅ BAŞARILI
+  Check: connection
+  Zaman: 08:13:00
+  Detay: MAVSDK bağlantısı OK
+
+GPS Durumu [KRİTİK]:
+  Durum: ❌ BAŞARISIZ
+  Check: gps
+  Zaman: 08:13:00
+  Detay: GPS kontrolü hatası: '>=' not supported ...
+
+Batarya Seviyesi [KRİTİK]:
+  Durum: ❌ BAŞARISIZ
+  Check: battery
+  Zaman: 08:13:02
+  Detay: Batarya düşük - %0.6, 15.3V
+
+Pozisyon Bilgisi [KRİTİK]:
+  Durum: ✅ BAŞARILI
+  Check: position
+  Zaman: 08:13:02
+  Detay: Pozisyon OK - 47.398040, 8.544623, 37.8m
+
+Motor ARM Durumu [KRİTİK]:
+  Durum: ⚠️ UYARI
+  Check: armed
+  Zaman: 08:13:04
+  Detay: Motorlar ARM'lı - DİKKAT!
+
+Uçuş Modu:
+  Durum: ⚠️ UYARI
+  Check: flight_mode
+  Zaman: 08:13:05
+  Detay: Bilinmeyen mod: HOLD
+
+Hız Kontrolü:
+  Durum: ⚠️ UYARI
+  Check: velocity
+  Zaman: 08:13:05
+  Detay: Yüksek hız: 53.0 km/h
+
+Açı Durumu:
+  Durum: ✅ BAŞARILI
+  Check: attitude
+  Zaman: 08:13:06
+  Detay: Açı normal - Roll: 15.8°, Pitch: 2.0°
+
+============================================================
+📋 LOG GEÇMİŞİ
+============================================================
+🚀 08:12:56 - BASİT MAVSDK KONTROLLERI BAŞLADI
+⚡ UUID karmaşıklığı yok - Hızlı telemetri kontrolleri!
+🔗 Bağlantı: udp://:14540
+⏱️ Timeout: 10 saniye
+🔄 08:12:56 - MAVSDK Bağlantısı kontrol ediliyor...
+✅ 08:13:00 - MAVSDK Bağlantısı [KRİTİK]: MAVSDK bağlantısı OK
+🔄 08:13:00 - GPS Durumu kontrol ediliyor...
+❌ 08:13:00 - GPS Durumu [KRİTİK]: GPS kontrolü hatası: '>=' not supported between instances of 'FixType' and 'int'
+🔄 08:13:01 - Batarya Seviyesi kontrol ediliyor...
+❌ 08:13:02 - Batarya Seviyesi [KRİTİK]: Batarya düşük - %0.6, 15.3V
+🔄 08:13:02 - Pozisyon Bilgisi kontrol ediliyor...
+✅ 08:13:02 - Pozisyon Bilgisi [KRİTİK]: Pozisyon OK - 47.398040, 8.544623, 37.8m
+🔄 08:13:03 - Motor ARM Durumu kontrol ediliyor...
+⚠️ 08:13:04 - Motor ARM Durumu [KRİTİK]: Motorlar ARM'lı - DİKKAT!
+🔄 08:13:04 - Uçuş Modu kontrol ediliyor...
+⚠️ 08:13:05 - Uçuş Modu: Bilinmeyen mod: HOLD
+🔄 08:13:05 - Hız Kontrolü kontrol ediliyor...
+⚠️ 08:13:05 - Hız Kontrolü: Yüksek hız: 53.0 km/h
+🔄 08:13:06 - Açı Durumu kontrol ediliyor...
+✅ 08:13:06 - Açı Durumu: Açı normal - Roll: 15.8°, Pitch: 2.0°
+✅ 08:13:06 - TÜM KONTROLLER TAMAMLANDI
